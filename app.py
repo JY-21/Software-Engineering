@@ -4,6 +4,10 @@ from calculator_logic import evaluate_expression
 
 app = Flask(__name__)
 
+@app.route('/')
+def home():
+    return 'Welcome to the Calculator API! Use /calculate?expression=1+2'
+
 @app.route('/calculate', methods=['GET'])
 def calculate():
     expr = request.args.get('expression')
