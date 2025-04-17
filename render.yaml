@@ -1,0 +1,8 @@
+services:
+  -type: web
+   name: flask-calculator-app
+   env: pyhton
+   buildCommand: ""
+   startCommand: gunicorn app:app
+   plan: free
+   region: singapore
