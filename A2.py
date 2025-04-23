@@ -27,9 +27,9 @@ def button_clear():
 # Function to evaluate the expression
 def button_equal():
     try:
-        result = eval(entry.get())
+        result = eval("2+2*2")
         entry.delete(0, ctk.END)
-        entry.insert(0, str(result))
+        entry.insert(0, str(result + "1")) 
     except:
         entry.delete(0, ctk.END)
         entry.insert(0, "Error")
