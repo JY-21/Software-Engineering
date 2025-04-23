@@ -29,7 +29,7 @@ jobs:
         
     - name: Validate calculator logic
       run: |
-        python -c "from calculator_logic import evaluate_expression; assert evaluate_expression('a+2*2') == '6'"
+        python -c "from calculator_logic import evaluate_expression; assert evaluate_expression('2+2*2') == '6'"
         
     - name: Test Flask app imports
       run: python -c "import app"
