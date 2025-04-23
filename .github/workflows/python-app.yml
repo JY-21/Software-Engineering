@@ -32,10 +32,8 @@ jobs:
         python -c "from calculator_logic import evaluate_expression; assert evaluate_expression('2+2*2') == '6'"
         
     - name: Test Flask app imports
-      run: python -c "import app"
+      run: python -c "import app.py"
       
     - name: Verify GUI components (headless)
       run: |
-        xvfb-run -a python -c "import A2" &
-        sleep 2
-        kill $! || true
+        xvfb-run -a python A2.py
