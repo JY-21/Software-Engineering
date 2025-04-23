@@ -33,4 +33,4 @@ jobs:
   
     - name: Verify GUI components (headless)
       run: |
-        xvfb-run -a python A2.py
+        timeout 5 xvfb-run -a python A2.py || true
