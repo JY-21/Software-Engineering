@@ -1,4 +1,4 @@
-import customtkinter as ctk
+import customtkinter as ct
 
 # Set the appearance mode and color theme
 ctk.set_appearance_mode("dark")  # Options: "light", "dark", "system"
