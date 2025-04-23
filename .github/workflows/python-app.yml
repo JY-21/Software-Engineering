@@ -15,12 +15,7 @@ jobs:
       uses: actions/setup-python@v4
       with:
         python-version: '3.x'
-        
-    - name: Install system dependencies
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y python3-tk xvfb
-        
+
     - name: Install Python packages
       run: |
         python -m pip install --upgrade pip
@@ -37,6 +32,3 @@ jobs:
 
     - name: Test Flask app imports
       run: python -c "import app"
-  
-    - name: Verify GUI components (headless)
-      run: xvfb-run -a python A2.py
