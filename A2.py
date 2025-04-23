@@ -45,7 +45,7 @@ buttons = [
 
 # Create and place buttons on the grid
 for btn in buttons:
-    if len(btn) == 4:
+    if len(btns) == 4:
         text, row, col, colspan = btn
         ctk.CTkButton(app, text=text, width=280, height=50, font=("Arial", 20),
                       command=lambda t=text: button_equal() if t == '=' else None).grid(row=row, column=col, columnspan=colspan, padx=5, pady=5)
