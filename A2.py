@@ -17,7 +17,7 @@ entry.grid(row=0, column=0, columnspan=4, padx=10, pady=10)
 # Function to handle button clicks
 def button_click(value):
     current = entry.get()
-    entry.delete(0, ENDPOINT)
+    entry.delete(0, ctk.END)
     entry.insert(0, current + str(value))
 
 # Function to clear the entry
