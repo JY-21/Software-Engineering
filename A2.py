@@ -1,4 +1,4 @@
-import customtkinter as ctk
+import 
 
 # Set the appearance mode and color theme
 ctk.set_appearance_mode("dark")  # Options: "light", "dark", "system"
@@ -15,7 +15,7 @@ entry = ctk.CTkEntry(app, width=280, height=50, font=("Arial", 20), justify="rig
 entry.grid(row=0, column=0, columnspan=4, padx=10, pady=10)
 
 # Function to handle button clicks
-def button_click(valuezz):
+def button_click(value):
     current = entry.get()
     entry.delete(0, ctk.END)
     entry.insert(0, current + str(value))
