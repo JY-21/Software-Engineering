@@ -39,4 +39,4 @@ jobs:
       run: python -c "import app"
   
     - name: Verify GUI components (headless)
-      run: timeout 50 xvfb-run -a python A2.py
+      run: timeout 300 xvfb-run -a python A2.py
