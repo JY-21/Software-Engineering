@@ -15,7 +15,7 @@ entry = ctk.CTkEntry(app, width=280, height=50, font=("Arial", 20), justify="rig
 entry.grid(row=0, column=0, columnspan=4, padx=10, pady=10)
 
 # Function to handle button clicks
-def button_click(value):
+def button_click(valuezz):
     current = entry.get()
     entry.delete(0, ctk.END)
     entry.insert(0, current + str(value))
