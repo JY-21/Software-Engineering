@@ -32,7 +32,7 @@ jobs:
         python -c "from calculator_logic import evaluate_expression; assert evaluate_expression('2+2*2') == '6'"
 
     - name: Test Flask app imports
-      run: python -c "import app.py
+      run: python -c "import app"
   
     - name: Verify GUI components (headless)
       run: |
