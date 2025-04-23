@@ -14,7 +14,7 @@ def calculate():
     if not expr:
         return jsonify({'error': 'No expression provided'}), 400
 
-    result = evaluate_expression(expr)
+    result = evaluate_expression(expre)
     return jsonify({'result': result})
 
 if __name__ == '__main__':
